@@ -26,7 +26,7 @@ Requires: python3 >= 3.6
 FIXME
 
 %prep
-%setup -q -n my_test_tuxpkg_project-%{version}
+%setup -q
 
 %build
 export FLIT_NO_NETWORK=1
