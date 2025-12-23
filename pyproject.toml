@@ -10,8 +10,5 @@ license = "MIT"
 license-files = ["LICENSE"]
 dynamic = ["version", "description"]
 
-[project.scripts]
-my-test-tuxpkg-project = "my_test_tuxpkg_project:main"
-
 [project.urls]
 Home = "https://github.com/roxell/my-test-tuxpkg-project"
