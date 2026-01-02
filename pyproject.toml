@@ -6,8 +6,8 @@ build-backend = "flit_core.buildapi"
 name = "my_test_tuxpkg_project"
 authors = [{name = "Anders Roxell", email = "anders.roxell@linaro.org"}]
 readme = "README.md"
-license = "MIT"
-license-files = ["LICENSE"]
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
 dynamic = ["version", "description"]
 
 [project.scripts]
