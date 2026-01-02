@@ -1,5 +1,5 @@
 Name:      my-test-tuxpkg-project
-Version:   0.7.0
+Version:   0.8.0
 Release:   0%{?dist}
 Summary:   FIXME
 License:   FIXME
@@ -57,6 +57,9 @@ ln -sf ../share/%{name}/run %{buildroot}/usr/bin/%{name}
 %license LICENSE
 
 %changelog
+* Fri Jan 02 2026 Anders Roxell <anders.roxell@linaro.org> - 0.8.0-1
+- Release 0.8.0. See: https://github.com/roxell/my-test-tuxpkg-project/releases/tag/v0.8.0
+
 * Tue Dec 23 2025 Anders Roxell <anders.roxell@linaro.org> - 0.7.0-1
 - Release 0.7.0. See: https://github.com/roxell/my-test-tuxpkg-project/releases/tag/v0.7.0
 
