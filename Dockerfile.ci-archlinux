@@ -23,9 +23,8 @@ RUN useradd -m build \
     && echo 'build ALL=(ALL) NOPASSWD: ALL' >/etc/sudoers.d/build \
     && chown -R build:build /tuxpkg
 
-RUN if [ -f /tuxpkg/tuxpkg.PKGBUILD ]; then exit 0; fi; \
-    pacman -S --noconfirm python-pip \
-    && pip install --break-system-packages tuxpkg \
+RUN pacman -S --noconfirm python-pip \
+    && pip install --break-system-packages git+https://gitlab.com/Linaro/tuxpkg.git@main \
     && tuxpkg --version
 
 # vim: ft=dockerfile
