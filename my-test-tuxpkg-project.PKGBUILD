@@ -18,7 +18,7 @@ build() {
 
 check() {
   cd "$pkgname-$pkgver"
-  PYTHONDONTWRITEBYTECODE=1 pytest
+  PYTHONDONTWRITEBYTECODE=1 PYTHONPATH="$PWD" pytest
 }
 
 package() {

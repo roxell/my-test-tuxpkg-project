@@ -9,7 +9,7 @@ RUN sed -i '/^NoExtract/d' /etc/pacman.conf \
         git \
         python-black \
         python-flit \
-        python-mypy \
+        mypy \
         python-pytest \
         python-pytest-mock \
         ${EXTRA_PACKAGES} \
