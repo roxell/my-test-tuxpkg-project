@@ -11,6 +11,7 @@ RUN sed -i '/^NoExtract/d' /etc/pacman.conf \
         python-build \
         python-flit \
         python-installer \
+        python-jinja \
         python-wheel \
         mypy \
         python-pytest \
