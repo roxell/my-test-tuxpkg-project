@@ -24,7 +24,7 @@ RUN useradd -m build \
     && chown -R build:build /tuxpkg
 
 RUN pacman -S --noconfirm python-pip \
-    && pip install --break-system-packages git+https://gitlab.com/Linaro/tuxpkg.git@main \
+    && pip install --break-system-packages git+https://gitlab.com/aroxell/tuxpkg.git@main \
     && tuxpkg --version
 
 # vim: ft=dockerfile
