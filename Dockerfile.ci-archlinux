@@ -21,9 +21,7 @@ RUN useradd -m build \
     && chown -R build:build /tuxpkg
 
 RUN if [ -f /tuxpkg/tuxpkg.PKGBUILD ]; then exit; fi; \
-    echo -e '[tuxpkg]\nServer = https://linaro.gitlab.io/tuxpkg/packages/\nSigLevel = Required' >> /etc/pacman.conf \
-    && curl -sL https://linaro.gitlab.io/tuxpkg/packages/signing-key.asc | pacman-key --add - \
-    && pacman-key --lsign-key ${TUXPKG_RELEASE_KEYID} \
-    && pacman -Sy --noconfirm tuxpkg
+    pacman -S --noconfirm python-pip \
+    && pip install --break-system-packages tuxpkg
 
 # vim: ft=dockerfile
