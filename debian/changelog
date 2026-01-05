@@ -1,3 +1,9 @@
+my-test-tuxpkg-project (0.18.0-1) UNRELEASED; urgency=medium
+
+  * Release 0.18.0. See: https://github.com/roxell/my-test-tuxpkg-project/releases/tag/v0.18.0
+
+ -- Anders Roxell <anders.roxell@linaro.org>  Mon, 05 Jan 2026 23:15:49 +0100
+
 my-test-tuxpkg-project (0.17.0-1) UNRELEASED; urgency=medium
 
   * Release 0.17.0. See: https://github.com/roxell/my-test-tuxpkg-project/releases/tag/v0.17.0

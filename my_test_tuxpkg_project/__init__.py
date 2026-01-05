@@ -2,7 +2,7 @@
 my-test-tuxpkg-project is ...
 """
 
-__version__ = "0.17.0"
+__version__ = "0.18.0"
 
 
 def main():
