@@ -8,7 +8,10 @@ RUN sed -i '/^NoExtract/d' /etc/pacman.conf \
     && pacman -S --noconfirm \
         git \
         python-black \
+        python-build \
         python-flit \
+        python-installer \
+        python-wheel \
         mypy \
         python-pytest \
         python-pytest-mock \
