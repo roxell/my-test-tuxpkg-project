@@ -1,5 +1,5 @@
 pkgname=my-test-tuxpkg-project
-pkgver=0.20.0
+pkgver=0.21.0
 pkgrel=1
 pkgdesc='FIXME'
 url='FIXME'
